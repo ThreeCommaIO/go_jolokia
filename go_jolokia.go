@@ -147,7 +147,7 @@ func performPostRequest(request *httpRequest) (*httpResponse, error) {
 
 	resp, reqErr := client.Do(req)
 	if reqErr != nil {
-		fmt.Printf("Request Could not be send")
+		//fmt.Printf("Request Could not be send")
 		return nil, reqErr
 	}
 	defer resp.Body.Close()
